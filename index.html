@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiscalização de Obras - Prefeitura de Brejo Santo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fiscalização de Obras</h1>
+        <p>para a Prefeitura de Brejo Santo</p>
+    </header>
+
+    <section id="formulario">
+        <img src="prefeitura.png" alt="Logo da Prefeitura de Brejo Santo" class="logo-prefeitura">
+        <h2>Registrar Atividade</h2>
+        <form id="formRegistro">
+            <div class="campo">
+                <label for="dataInput">Data:</label>
+                <input type="date" id="dataInput">
+            </div>
+            <div class="campo">
+                <label for="localInput">Local do Serviço:</label>
+                <input type="text" id="localInput" placeholder="Local do Serviço">
+            </div>
+            <div class="campo">
+                <label>Caçambeiros:</label>
+                <div id="caçambeirosCheckbox">
+                    <!-- Checkbox de caçambeiros são gerados dinamicamente pelo JavaScript -->
+                </div>
+            </div>
+            <div class="campo">
+                <label for="quantidadeCarradas">Quantidade de Carradas:</label>
+                <input type="number" id="quantidadeCarradas" placeholder="Quantidade de Carradas">
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+
+    <section id="registros">
+        <h2>Registros de Atividades</h2>
+        <div id="cardsContainer">
+            <!-- Cards de registros são gerados dinamicamente pelo JavaScript -->
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
